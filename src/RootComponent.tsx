@@ -4,11 +4,13 @@ import { Page } from "./types";
 import { simpleButtonPage } from "./pages/SimpleButtonPage";
 import { configurableButtonPage } from "./pages/ConfigurableButtonPage";
 import { presetButtonPage } from "./pages/PresetButtonPage";
+import { dialogPage } from "./pages/DialogPage";
 
 const pages: readonly Page[] = [
 	simpleButtonPage,
 	configurableButtonPage,
 	presetButtonPage,
+	dialogPage,
 ];
 
 export function RootComponent() {
