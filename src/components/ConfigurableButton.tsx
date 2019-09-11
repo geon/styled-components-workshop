@@ -17,7 +17,8 @@ export const ConfigurableButton = styled.button`
 	}
 
 	&:active {
-		background: ${(props: ButtonProps) => props.buttonColor.toString()};
+		background: ${(props: ButtonProps) =>
+			props.buttonColor.darken(0.2).toString()};
 	}
 
 	outline: none;
