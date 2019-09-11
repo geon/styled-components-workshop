@@ -27,7 +27,8 @@ export function RootComponent() {
 				disabled={pageIndex >= pages.length - 1}
 			>
 				Next
-			</button>
+			</button>{" "}
+			<button onClick={() => setPageIndex(pages.length - 1)}>Last</button>
 			<hr></hr>
 			<h1>{pages[pageIndex].title}</h1>
 			<Component />
