@@ -4,20 +4,19 @@ import { ConfigurableButton } from "./ConfigurableButton";
 
 const presets = {
 	default: {
-		buttonColor: new Color("#eef8ff"),
-		bulgeiness: 0.04,
+		buttonColor: new Color("#eee"),
+	},
+	primary: {
+		buttonColor: new Color("#25f"),
 	},
 	dark: {
 		buttonColor: new Color("#333"),
-		bulgeiness: 0.2,
 	},
 	danger: {
 		buttonColor: new Color("#ff3716"),
-		bulgeiness: 0.2,
 	},
 	warning: {
 		buttonColor: new Color("#ff8d16"),
-		bulgeiness: 0.2,
 	},
 };
 
