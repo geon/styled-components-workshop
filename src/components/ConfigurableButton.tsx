@@ -10,10 +10,17 @@ export const ConfigurableButton = styled.button`
 		props.buttonColor.isLight() ? "black" : "white"};
 
 	background: ${(props: ButtonProps) => props.buttonColor.toString()};
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+
 	&:hover {
-		background: ${(props: ButtonProps) =>
-			props.buttonColor.darken(0.2).toString()};
+		box-shadow: none;
 	}
+
+	&:active {
+		background: ${(props: ButtonProps) => props.buttonColor.toString()};
+	}
+
+	outline: none;
 
 	border: 1px solid
 		${(props: ButtonProps) => props.buttonColor.darken(0.2).toString()};
@@ -21,5 +28,4 @@ export const ConfigurableButton = styled.button`
 
 	padding: 0.5em 1em;
 	border-radius: 5px;
-	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
 `;
