@@ -6,6 +6,7 @@ import { configurableButtonPage } from "./pages/ConfigurableButtonPage";
 import { presetButtonPage } from "./pages/PresetButtonPage";
 import { dialogPage } from "./pages/DialogPage";
 import { betterDialogPage } from "./pages/BetterDialogPage";
+import { structuredDialogPage } from "./pages/StructuredDialogPage";
 
 const pages: readonly Page[] = [
 	simpleButtonPage,
@@ -13,6 +14,7 @@ const pages: readonly Page[] = [
 	presetButtonPage,
 	dialogPage,
 	betterDialogPage,
+	structuredDialogPage,
 ];
 
 export function RootComponent() {
